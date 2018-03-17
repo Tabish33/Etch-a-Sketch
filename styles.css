@@ -12,9 +12,79 @@
   align-content: stretch;
   position: relative;
   height:500px; width:500px;
+  clear: none;
 
 }
 
 .box{
   background-color: white;
+}
+
+.options{
+  float: left;
+  position: relative;
+  left: 100;
+}
+
+.option{
+  width: 100px;
+  height: 50px;
+  border: 1px black solid;
+  position: relative;
+  left: 100px;
+}
+.resolution{
+
+  top: 100px;
+}
+
+.eraser{
+
+  top: 150px;
+}
+
+.reset{
+
+  top: 200px;
+}
+
+.colors{
+
+  float: right;
+  position: relative;
+  right: 100px;
+  height: auto;
+  width: auto;
+}
+
+.button{
+  width: 100px;
+  height: 50px;
+  border: 1px black solid;
+  right: 100px;
+  position: relative;
+}
+
+.rainbow{
+
+  top: 20px;
+}
+
+.red{
+
+  top: 70px;
+}
+
+.blue{
+
+  top: 120px;
+}
+
+.green{
+
+  top: 160px;
+}
+
+.black{
+  top: 210px;
 }
