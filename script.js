@@ -1,4 +1,4 @@
-function createBoard(){   // Setting up a 15x15 board
+function createBoard(){   // Setting up a 16x16 board
 
     let flex_container = document.querySelector('.flex-container')
 
@@ -9,7 +9,7 @@ function createBoard(){   // Setting up a 15x15 board
     }
 
     let flex_box = document.querySelectorAll('.box');
-    box_len = 33.33;
+    box_len = 31.25;
 
     flex_box.forEach(function(b){
       b.setAttribute('style',`height:${box_len}px; width:${box_len}px;`);
@@ -209,9 +209,9 @@ function resetButton(){
   reset_btn.onclick = function(){ reset();};
 }
 
-let pixel_per_side = 15;
+let pixel_per_side = 16;
 let box_len;
-let squares = 225;
+let squares = 256;
 
 createBoard();
 resolution();

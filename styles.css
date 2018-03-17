@@ -1,3 +1,9 @@
+html{
+  background-image: url('bg.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
 .main-container{
   position: relative;
   top: 125px;
@@ -6,13 +12,14 @@
 
 .flex-container{
 
-  border: 1px solid black;
+  border: 10px solid black;
   display: flex;
   flex-wrap: wrap;
   align-content: stretch;
   position: relative;
   height:500px; width:500px;
   clear: none;
+  transition: 0.3s;
 
 }
 
@@ -23,15 +30,20 @@
 .options{
   float: left;
   position: relative;
-  left: 100;
+  left: 150px;
 }
 
 .option{
-  width: 100px;
+
+  font-family: 'Pacifico', cursive;
+  width: 150px;
   height: 50px;
-  border: 1px black solid;
+  border: 3px black solid;
   position: relative;
   left: 100px;
+  line-height: 50px;
+  font-size: 20px;
+  transition: 0.3s;
 }
 .resolution{
 
@@ -52,17 +64,22 @@
 
   float: right;
   position: relative;
-  right: 100px;
+  right: 150px;
   height: auto;
   width: auto;
 }
 
 .button{
-  width: 100px;
+
+  font-family: 'Pacifico', cursive;
+  width: 150px;
   height: 50px;
-  border: 1px black solid;
+  border: 3px black solid;
   right: 100px;
   position: relative;
+  line-height: 50px;
+  font-size: 20px;
+  transition: 0.3s;
 }
 
 .rainbow{
@@ -87,4 +104,27 @@
 
 .black{
   top: 210px;
+}
+
+.heading{
+
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  position: absolute;
+  left: 618px;
+  top: 25px;
+}
+
+.option:hover{
+  transform: scale(1.3);
+  box-shadow: 3px 3px 50px yellow;
+}
+
+.button:hover{
+  transform: scale(1.3);
+  box-shadow: 3px 3px 50px yellow;
+}
+
+.flex-container:hover{
+  box-shadow: 3px 3px 50px yellow;
 }
