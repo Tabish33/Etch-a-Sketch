@@ -74,6 +74,10 @@ function redBox(){
         b.setAttribute('style',`background-color:red;
                 height:${box_len}px; width:${box_len}px;`);
         }
+
+      let flex_container = document.querySelector('.flex-container');
+      flex_container.setAttribute('style',    //boundry color effect
+            `box-shadow: 0px 0px 100px red;`)
       })
 }
 
@@ -86,6 +90,9 @@ function whiteBox(){
       b.setAttribute('style',`background-color:white;
               height:${box_len}px; width:${box_len}px;`);
       }
+    let flex_container = document.querySelector('.flex-container');
+    flex_container.setAttribute('style',    //boundry color effect
+          `box-shadow: 0px 0px 100px white;`)
     })
 
     console.log('running');
@@ -100,6 +107,10 @@ function blueBox(){
         b.setAttribute('style',`background-color:blue;
                 height:${box_len}px; width:${box_len}px;`);
         }
+
+      let flex_container = document.querySelector('.flex-container');
+      flex_container.setAttribute('style',    //boundry color effect
+            `box-shadow: 0px 0px 100px blue;`)
       })
 }
 
@@ -112,6 +123,10 @@ function greenBox(){
         b.setAttribute('style',`background-color:green;
               height:${box_len}px; width:${box_len}px;`);
         }
+
+      let flex_container = document.querySelector('.flex-container');
+      flex_container.setAttribute('style',    //boundry color effect
+            `box-shadow: 0px 0px 100px green;`)
       })
 }
 
@@ -124,6 +139,10 @@ function blackBox(){
       b.setAttribute('style',`background-color:black;
             height:${box_len}px; width:${box_len}px;`);
       }
+
+    let flex_container = document.querySelector('.flex-container');
+    flex_container.setAttribute('style',    //boundry color effect
+          `box-shadow: 0px 0px 100px black;`)
     })
 }
 
@@ -141,8 +160,13 @@ function rainbowBox(){
 
       B.setAttribute('style',`background-color:rgb(${r},${g},${b});
             height:${box_len}px; width:${box_len}px;`);
+
+      let flex_container = document.querySelector('.flex-container');
+      flex_container.setAttribute('style',    //boundry color effect
+          `box-shadow: 0px 0px 100px rgb(${r},${g},${b});`)
       }
-    })
+
+      });
 }
 
 function redButton(){
@@ -171,6 +195,13 @@ function rainbowButton(){
   let rainbow_btn = document.querySelector('.rainbow');
 
   rainbow_btn.onclick = function(){rainbowBox();}
+}
+
+function blackButton(){
+
+  let black_btn = document.querySelector('.black');
+
+  black_btn.onclick = function(){blackBox();}
 }
 
 function getRandomInt(max){
@@ -221,4 +252,5 @@ redButton();
 blueButton();
 greenButton();
 rainbowButton();
+blackButton();
 resetButton();
