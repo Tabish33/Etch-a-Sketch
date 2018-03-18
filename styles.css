@@ -8,6 +8,8 @@ html{
   position: relative;
   top: 125px;
   text-align: -webkit-center;
+  text-align: -moz-center;
+
 }
 
 .flex-container{
@@ -16,7 +18,6 @@ html{
   display: flex;
   flex-wrap: wrap;
   align-content: stretch;
-  position: relative;
   height:500px; width:500px;
   clear: none;
   transition: 0.3s;
@@ -108,7 +109,7 @@ html{
 
 .heading{
 
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico', cursive,sans-serif;
   font-size: 50px;
   position: absolute;
   left: 618px;
